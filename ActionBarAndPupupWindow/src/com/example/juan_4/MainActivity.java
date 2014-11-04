@@ -70,6 +70,7 @@ public class MainActivity extends Activity {
 				if(is!=null){
 					lists = parserXml(is);
 					mHandler.sendEmptyMessage(1);
+					System.out.println("lists");
 				}
 			}
 		}).start();
