@@ -71,6 +71,7 @@ public class MainActivity extends Activity {
 					lists = parserXml(is);
 					mHandler.sendEmptyMessage(1);
 					System.out.println("lists");
+					Log.e("tag", "lists:");
 				}
 			}
 		}).start();
@@ -114,7 +115,7 @@ public class MainActivity extends Activity {
 		public View getView(int position, View convertView, ViewGroup parent) {
 			// TODO Auto-generated method stub
 			TextView text = new TextView(MainActivity.this);
-			text.setText("ÍøÒ×¿Æ¼¼"+position);
+			text.setText("ï¿½ï¿½ï¿½×¿Æ¼ï¿½"+position);
 			text.setTextColor(Color.WHITE);
 			return text;
 		}
